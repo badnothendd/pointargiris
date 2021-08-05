@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	int a= 8, *ap;
+	float b= 2.5, *bp;
+	double c= 3.4333, *cp;
+	char d= 't', *dp;
+	
+	int sayilar[5]= {3,4,9,5,4};
+	int *arrayp;
+	
+	
+	ap= &a;
+	bp= &b;
+	cp= &c;
+	dp= &d;
+	arrayp= &sayilar[2];
+	
+	
+	printf("%p adresindeki intin degeri %d dir.\n",ap,*ap);
+	printf("%p adresindeki floatin degeri %f dir.\n",bp,*bp);
+	printf("%p adresindeki doublein degeri %lf dir.\n",cp,*cp);
+	printf("%p adresindeki charin degeri %c dir.\n",dp,*dp);
+	printf("%p adresindeki sayilarin degeri %d dir.\n",arrayp,*arrayp);
+	
+	
+	
+	
+	return 0;
+}
